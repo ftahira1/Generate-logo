@@ -14,7 +14,7 @@ function init () {
     inquirer.prompt([
         {
             type: 'maxlength-input',
-            name: 'logoText',
+            name: 'textLogo',
             message: `\n 1) Write your logo characters. (Up to 3):`,
             maxLength: 3
         },
@@ -35,9 +35,9 @@ function init () {
             message: `4) Pick a shape color. (type in 'red' or '#FF0000'):`
         },
         
-    ]).then(answers => {
-        console.log(answers);
-      })
+    ]).then(answers => next(answers))
 }
 
 init();
+
+function next (answers) {}
