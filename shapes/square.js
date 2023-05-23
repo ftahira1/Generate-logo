@@ -8,12 +8,12 @@ class Square extends Shape {
   
     formShape(shape) {
       shape = `<rect x="70" y="20" width="160" height="160" fill="${this.shapeColor}"/>`;
-      super.renderShape(shape);
+      super.formShape(shape);
       return shape;
     }
   
     formLogo() {
-      return super.renderLogo();
+      return super.formLogo();
     }
 };
 

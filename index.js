@@ -2,6 +2,10 @@
 const fs = require("fs");
 const inquirer = require("inquirer");
 const MaxLengthInputPrompt = require('inquirer-maxlength-input-prompt');
+const Circle = require("./shapes/circle");
+const Triangle = require("./shapes/triangle");
+const Square = require("./shapes/square");
+
 
 
 //Initial function.
@@ -35,9 +39,59 @@ function init () {
             message: `4) Pick a shape color. (type in 'red' or '#FF0000'):`
         },
         
-    ]).then(answers => next(answers))
+    ]).then(answers => next(answers)) 
+    
 }
 
 init();
 
-function next (answers) {}
+function next(answers) {
+    switch (answers.shape) {
+    case "traingle":
+      const newTriangle = new Triangle(
+        answers.textLogo, 
+        answers.textColor, 
+        answers.shape, 
+        answers.shapeColor
+        );
+
+        console.log(newTriangle);
+      fs.writeFile("./svg/triangle.svg", newTriangle.formLogo(), (err) => {
+        err
+          ? console.err(err)
+          : console.log(`\nGenerated ${answers.shape}.svg!\n`);
+      });
+      break;
+    case "circle":
+      const newCircle = new Circle(
+        answers.textLogo, 
+        answers.textColor, 
+        answers.shape, 
+        answers.shapeColor
+      );
+      console.log(newCircle);
+      fs.writeFile(
+        "./svg/triangle.svg",
+        newCircle.formLogo(),
+        (err) => {
+          err
+            ? console.err(err)
+            : console.log(`\nGenerated ${answers.shape}.svg!\n`);
+        }
+      );
+      break;
+    default:
+      const newSquare = new Square(
+        answers.textLogo, 
+        answers.textColor, 
+        answers.shape, 
+        answers.shapeColor
+      );
+      console.log(newSquare)
+      fs.writeFile("./svg/square.svg", newSquare.formLogo(), (err) => {
+        err
+          ? console.err(err)
+          : console.log(`\nGenerated ${answers.shape}.svg!\n`);
+      });
+      break;
+  }}
