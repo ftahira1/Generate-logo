@@ -71,7 +71,7 @@ function next(answers) {
       );
       console.log(newCircle);
       fs.writeFile(
-        "./svg/triangle.svg",
+        "./svg/circle.svg",
         newCircle.formLogo(),
         (err) => {
           err

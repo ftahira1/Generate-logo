@@ -7,7 +7,7 @@ class Triangle extends Shape {
     }
   
     formShape(shape) {
-      shape = `<polygon points="145,20 280,150 40,150" fill="orange" fill="${this.shapeColor}"/>`;
+      shape = `<polygon points="145,20 280,150 40,150" fill="${this.shapeColor}"/>`;
       super.formShape(shape);
       return shape;
     }
