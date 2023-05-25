@@ -25,7 +25,7 @@ function init () {
         {
             type: 'input',
             name: 'textColor',
-            message: `2) Pick a color for your charachters. (ex: type in "blue" or "0000FF"):`,
+            message: `2) Pick a color for your charachters. (ex: type in "blue" or "#0000FF"):`,
         },
         {
             type: "list",
@@ -47,7 +47,7 @@ init();
 
 function next(answers) {
     switch (answers.shape) {
-    case "traingle":
+    case "triangle":
       const newTriangle = new Triangle(
         answers.textLogo, 
         answers.textColor, 
