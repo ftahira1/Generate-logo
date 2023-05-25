@@ -4,7 +4,7 @@
 
 ## Description
 
-- The purpose of this assignment was to implement the concept of polymorphism by using parent and child class constructors, to begin understanding Test-driven develpment (TDD) with unit testing using Jest, and to practice more with the Inquirer package.
+- In this project, we had to understand and utilize polymorphism by creating parent and child class constructors in order to perform Test-Driven Development (TDD), as well as practice more with using Inquirer and writing to a file.
 
 ## Installation
 1. This is a [Node.js](https://nodejs.org/en) application. For this app to run correctly, it is instructed to use at least v16 (up to v18) 
@@ -29,7 +29,6 @@
 ## Demo
 
 - A walkthrough video can be found here: https://drive.google.com/file/d/1EP7KvQt48kBF243WsZd5Cg83dJdJplNe/view?usp=sharing
-
 
 ## License
 
