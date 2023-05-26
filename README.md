@@ -28,7 +28,7 @@
 
 ## Demo
 
-- A walkthrough video can be found here: https://drive.google.com/file/d/1EP7KvQt48kBF243WsZd5Cg83dJdJplNe/view?usp=sharing
+- A walkthrough video can be found here: https://drive.google.com/file/d/1EP7KvQt48kBF243WsZd5Cg83dJdJplNe/view?usp=sharing 
 
 ## License
 
